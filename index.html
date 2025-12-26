@@ -371,7 +371,32 @@
         }
 
         .experiment-form input::placeholder {
-            color: var(--text-dim);
+    color: var(--text-dim);
+}
+
+.experiment-form textarea {
+    width: 100%;
+    padding: 16px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    color: var(--text);
+    margin-bottom: 16px;
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+    transition: border-color 0.2s;
+}
+
+.experiment-form textarea:focus {
+    border-color: var(--accent);
+}
+
+.experiment-form textarea::placeholder {
+    color: var(--text-dim);
+}
         }
 
         .experiment-form button {
