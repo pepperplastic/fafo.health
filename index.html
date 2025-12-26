@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,6 @@
             line-height: 1.6;
         }
 
-        /* Subtle grain overlay */
         body::before {
             content: '';
             position: fixed;
@@ -53,7 +53,6 @@
             padding: 0 24px;
         }
 
-        /* Nav */
         nav {
             padding: 24px 0;
             border-bottom: 1px solid var(--border);
@@ -89,7 +88,6 @@
             color: var(--accent);
         }
 
-        /* Hero */
         .hero {
             padding: 100px 0 80px;
             border-bottom: 1px solid var(--border);
@@ -160,7 +158,6 @@
             transform: translateX(4px);
         }
 
-        /* Manifesto */
         .manifesto {
             padding: 80px 0;
             border-bottom: 1px solid var(--border);
@@ -213,7 +210,6 @@
             margin: 0;
         }
 
-        /* How it works */
         .how {
             padding: 80px 0;
             border-bottom: 1px solid var(--border);
@@ -278,7 +274,6 @@
             line-height: 1.7;
         }
 
-        /* Experiment CTA */
         .experiment {
             padding: 80px 0;
             border-bottom: 1px solid var(--border);
@@ -371,57 +366,55 @@
         }
 
         .experiment-form input::placeholder {
-    color: var(--text-dim);
-}
-
-.experiment-form textarea {
-    width: 100%;
-    padding: 16px;
-    font-family: 'Archivo', sans-serif;
-    font-size: 16px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 0;
-    color: var(--text);
-    margin-bottom: 16px;
-    outline: none;
-    resize: vertical;
-    min-height: 80px;
-    transition: border-color 0.2s;
-}
-
-.experiment-form textarea:focus {
-    border-color: var(--accent);
-}
-
-.experiment-form textarea::placeholder {
-    color: var(--text-dim);
-}
+            color: var(--text-dim);
         }
 
-       .experiment-form button {
-    width: 100%;
-    padding: 20px 24px;
-    font-family: 'Archivo', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #D4A84B;
-    color: #1A1915;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    -webkit-appearance: none;
-    appearance: none;
-}
+        .experiment-form textarea {
+            width: 100%;
+            padding: 16px;
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            margin-bottom: 16px;
+            outline: none;
+            resize: vertical;
+            min-height: 80px;
+            transition: border-color 0.2s;
+        }
 
-.experiment-form button:hover {
-    background-color: #E9C46A;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(212, 168, 75, 0.3);
-}
+        .experiment-form textarea:focus {
+            border-color: var(--accent);
+        }
 
-        /* Principles */
+        .experiment-form textarea::placeholder {
+            color: var(--text-dim);
+        }
+
+        .experiment-form button {
+            width: 100%;
+            padding: 20px 24px;
+            font-family: 'Archivo', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: #D4A84B;
+            color: #1A1915;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .experiment-form button:hover {
+            background-color: #E9C46A;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(212, 168, 75, 0.3);
+        }
+
         .principles {
             padding: 80px 0;
         }
@@ -452,7 +445,6 @@
             line-height: 1.7;
         }
 
-        /* Footer */
         footer {
             padding: 32px 0;
             border-top: 1px solid var(--border);
@@ -495,7 +487,6 @@
             color: #555;
         }
 
-        /* Mobile */
         @media (max-width: 900px) {
             .manifesto-grid {
                 grid-template-columns: 1fr;
@@ -620,13 +611,13 @@
                     <p>Our first collective study launches January 2026. Get on the list to claim your spot and help decide what we test first.</p>
                 </div>
                 <div class="experiment-form">
-                   <form action="https://formspree.io/f/mzdbzoea" method="POST">
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" placeholder="you@email.com" required>
-    <label for="idea">What should we test first?</label>
-    <textarea id="idea" name="idea" placeholder="Creatine, cold plunges, magnesium... what are you curious about?" rows="3"></textarea>
-    <button type="submit">Count Me In</button>
-</form>
+                    <form action="https://formspree.io/f/mzdbzoea" method="POST">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                        <label for="idea">What should we test first?</label>
+                        <textarea id="idea" name="idea" placeholder="Creatine, cold plunges, magnesium... what are you curious about?" rows="3"></textarea>
+                        <button type="submit">Count Me In →</button>
+                    </form>
                 </div>
             </div>
         </div>
