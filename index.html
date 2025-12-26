@@ -399,24 +399,28 @@
 }
         }
 
-        .experiment-form button {
-            width: 100%;
-            padding: 16px;
-            font-family: 'Archivo', sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background: var(--accent);
-            color: var(--bg);
-            border: none;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
+       .experiment-form button {
+    width: 100%;
+    padding: 20px 24px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
-        .experiment-form button:hover {
-            background: var(--accent-bright);
-        }
+.experiment-form button:hover {
+    background: var(--accent-bright);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 168, 75, 0.25);
+}
 
         /* Principles */
         .principles {
@@ -622,7 +626,7 @@
     <input type="email" id="email" name="email" placeholder="you@email.com" required>
     <label for="idea">What should we test first?</label>
     <textarea id="idea" name="idea" placeholder="Creatine, cold plunges, magnesium... what are you curious about?" rows="3"></textarea>
-    <button type="submit">I'm In</button>
+    <button type="submit">Count Me In</button>
 </form>
                 </div>
             </div>
