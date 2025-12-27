@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAFO.health — Citizen Schience</title>
+    <title>FAFO.health — Citizen Science</title>
     <meta name="description" content="Collective self-experiments with real data. Join 50 people, run the protocol, share the results.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -167,10 +166,13 @@
             display: grid;
             grid-template-columns: 200px 1fr;
             gap: 60px;
+            align-items: start;
         }
-.manifesto-grid + .manifesto-grid {
-    margin-top: 48px;
-}
+
+        .manifesto-grid + .manifesto-grid {
+            margin-top: 48px;
+        }
+
         .manifesto-label {
             font-size: 11px;
             font-weight: 700;
@@ -178,7 +180,6 @@
             text-transform: uppercase;
             color: var(--text-dim);
             padding-top: 8px;
-            align-self: start;
         }
 
         .manifesto-content p {
@@ -199,7 +200,7 @@
         }
 
         .pull-quote {
-            margin: 40px 0;
+            margin: 0 0 28px 0;
             padding: 32px;
             background: var(--bg-light);
             border-left: 3px solid var(--accent);
@@ -493,7 +494,11 @@
         @media (max-width: 900px) {
             .manifesto-grid {
                 grid-template-columns: 1fr;
-                gap: 16px;
+                gap: 12px;
+            }
+
+            .manifesto-grid + .manifesto-grid {
+                margin-top: 32px;
             }
 
             .manifesto-label {
@@ -564,19 +569,19 @@
         <div class="container">
             <div class="manifesto-grid">
                 <div class="manifesto-label">The Problem</div>
-             <div class="manifesto-content">
-    <p>Your buddy swears creatine fixed his brain fog. Reddit says ashwagandha is life-changing. Some influencer claims cold plunges cured her depression.</p>
-    <p>You try it. Maybe something happens, maybe placebo... It's hard to know when your sample size is <span class="highlight">one</span>.</p>
-</div>
-</div>
-<div class="manifesto-grid">
-<div class="manifesto-label">The Solution</div>
-<div class="manifesto-content">
-    <div class="pull-quote">
-        <p>What if 50-100 people ran the same protocol, pulled the same bloodwork before and after, and published everything?</p>
-    </div>
-    <p><span class="highlight">That's the play;</span> real interventions, real biomarkers, shared data. No sponsor influence and no broken telephone. Just <span class="highlight">answers</span>.</p>
-</div>
+                <div class="manifesto-content">
+                    <p>Your buddy swears creatine fixed his brain fog. Reddit says ashwagandha is life-changing. Some influencer claims cold plunges cured her depression.</p>
+                    <p>You try it. Maybe something happens, maybe placebo... It's hard to know when your sample size is <span class="highlight">one</span>.</p>
+                </div>
+            </div>
+            <div class="manifesto-grid">
+                <div class="manifesto-label">The Solution</div>
+                <div class="manifesto-content">
+                    <div class="pull-quote">
+                        <p>What if 50-100 people ran the same protocol, pulled the same bloodwork before and after, and published everything?</p>
+                    </div>
+                    <p><span class="highlight">That's the play;</span> real interventions, real biomarkers, shared data. No sponsor influence and no broken telephone. Just <span class="highlight">answers</span>.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -661,8 +666,8 @@
         <div class="container">
             <a href="/" class="footer-logo">FAFO.health</a>
             <div class="footer-links">
-              <a href="/disclaimer.html">Disclaimer</a>
-<a href="mailto:hello@fafo.health">Contact</a>
+                <a href="/disclaimer.html">Disclaimer</a>
+                <a href="mailto:hello@fafo.health">Contact</a>
                 <span>© 2025</span>
             </div>
         </div>
