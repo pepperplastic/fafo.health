@@ -56,13 +56,13 @@
         .logo {
             font-size: 18px;
             font-weight: 800;
-            color: var(--text);
+            color: var(--text-dim);
             text-decoration: none;
             letter-spacing: -0.5px;
         }
 
         .logo span {
-            color: var(--accent);
+            color: var(--text-dim);
         }
 
         .nav-link {
@@ -150,13 +150,13 @@
             height: 2px;
         }
 
-        /* Axis labels - fully black */
+        /* Axis labels - grey */
         .axis-label {
             position: absolute;
             font-size: 22px;
             font-weight: 800;
             letter-spacing: -0.5px;
-            color: var(--text);
+            color: var(--text-dim);
         }
 
         .axis-label.y-label {
@@ -171,12 +171,12 @@
             transform: translateX(-50%);
         }
 
-        /* Smiley face */
+        /* Smiley face - centered in grid */
         .smiley {
             position: absolute;
-            top: 62px;
-            right: 32px;
-            font-size: 18px;
+            top: calc(50% + 5px);
+            left: calc(50% + 15px);
+            transform: translate(-50%, -50%);
             opacity: 0;
             animation: smileyAppear 0.8s ease-out forwards;
             animation-delay: 8s;
@@ -186,21 +186,21 @@
         @keyframes smileyAppear {
             0% {
                 opacity: 0;
-                transform: scale(0.5);
+                transform: translate(-50%, -50%) scale(0);
             }
-            50% {
-                transform: scale(1.2);
+            70% {
+                transform: translate(-50%, -50%) scale(1.2);
             }
             100% {
                 opacity: 1;
-                transform: scale(1);
+                transform: translate(-50%, -50%) scale(1);
             }
         }
 
         .smiley svg {
-            width: 22px;
-            height: 22px;
-            animation: smileyPulse 4s ease-in-out infinite;
+            width: 36px;
+            height: 36px;
+            animation: smileyDance 6s ease-in-out infinite;
             animation-delay: 8.8s;
         }
 
@@ -210,9 +210,22 @@
             animation-delay: 8.8s;
         }
 
-        @keyframes smileyPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+        @keyframes smileyDance {
+            0% { 
+                transform: rotate(0deg) scale(1); 
+            }
+            25% { 
+                transform: rotate(90deg) scale(1.15); 
+            }
+            50% { 
+                transform: rotate(180deg) scale(1); 
+            }
+            75% { 
+                transform: rotate(270deg) scale(1.15); 
+            }
+            100% { 
+                transform: rotate(360deg) scale(1); 
+            }
         }
 
         @keyframes smileyColorShift {
@@ -580,12 +593,23 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
-        .step-number {
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 12px;
-            letter-spacing: -0.5px;
+        .step-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .step-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--accent-dark);
+            fill: none;
+            stroke-width: 1.5;
         }
 
         .step h3 {
@@ -915,7 +939,7 @@
                     <div class="axis-label y-label">FA</div>
                     <div class="axis-label x-label">FO</div>
                     
-                    <!-- Smiley face - appears when trendline completes -->
+                    <!-- Smiley face - centered, appears after trendline -->
                     <div class="smiley">
                         <svg viewBox="0 0 24 24">
                             <circle class="smiley-face" cx="12" cy="12" r="10"/>
@@ -1043,17 +1067,23 @@
             </div>
             <div class="steps">
                 <div class="step">
-                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M17 6h4v4h-2l-2 2v-2h0V6z"/></svg>
+                    </div>
                     <h3>We Choose a Protocol</h3>
                     <p>Community votes what to test next; one intervention, clear biomarkers, something safe, accessible, and worth testing.</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
                     <h3>You Run It</h3>
                     <p>Baseline labs. 30-60 days on protocol. Weekly check-ins with the cohort and follow-up labs. We keep each other accountable.</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 9l-5 5-2-2-4 4"/></svg>
+                    </div>
                     <h3>We Publish Everything</h3>
                     <p>Aggregated results. Granular data. Honest breakdown of what moved and what didn't. No spin and no BS.</p>
                 </div>
