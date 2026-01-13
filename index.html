@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+    <!-- Reddit Pixel -->
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_ib6a51fchsfd');rdt('track', 'PageVisit');
+</script>
+<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+<!-- End Reddit Pixel -->
     <style>
         * {
             margin: 0;
@@ -1085,7 +1091,7 @@
                     <p>Our first collective study launches February 2026. Get on the list to claim your spot and help decide what we test first.</p>
                 </div>
                 <div class="experiment-form">
-                    <form action="https://formspree.io/f/mzdbzoea" method="POST">
+                    <form action="https://formspree.io/f/mzdbzoea" method="POST" onsubmit="rdt('track', 'SignUp');">
                         <label for="email">Your Email</label>
                         <input type="email" id="email" name="email" placeholder="you@email.com" required>
                         <label for="idea">What should we test first?</label>
