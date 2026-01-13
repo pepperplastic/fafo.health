@@ -249,6 +249,73 @@
             66% { fill: #4A9167; }
         }
 
+        /* Label for smiley */
+        .smiley-label {
+            position: absolute;
+            top: calc(50% + 45px);
+            left: calc(50% + 15px);
+            transform: translateX(-50%);
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--green);
+            opacity: 0;
+            animation: labelAppear 0.5s ease-out forwards;
+            animation-delay: 8.5s;
+            white-space: nowrap;
+        }
+
+        /* Sad face - outlier below trendline */
+        .sad-face {
+            position: absolute;
+            top: 75%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: sadAppear 0.6s ease-out forwards;
+            animation-delay: 2s;
+            z-index: 20;
+        }
+
+        @keyframes sadAppear {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .sad-face svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .sad-face svg .sad-face-bg {
+            fill: #B8B4AC;
+        }
+
+        /* Label for sad face */
+        .sad-label {
+            position: absolute;
+            top: calc(75% + 18px);
+            left: 25%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-dim);
+            opacity: 0;
+            animation: labelAppear 0.5s ease-out forwards;
+            animation-delay: 2.5s;
+            white-space: nowrap;
+        }
+
+        @keyframes labelAppear {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
         /* Chart SVG */
         .chart-svg {
             position: absolute;
@@ -905,7 +972,7 @@
     <nav>
         <div class="container">
             <a href="/" class="logo">FAFO<span>.health</span></a>
-            <a href="mailto:hello&#64;fafo&#46;health" class="nav-link">hello&#64;fafo&#46;health</a>
+            <a href="/cdn-cgi/l/email-protection#f69e939a9a99d0d5c0c2cd90979099d0d5c2c0cd9e93979a829e" class="nav-link">hello&#64;fafo&#46;health</a>
         </div>
     </nav>
 
@@ -942,6 +1009,18 @@
                             <path d="M8 15 Q12 18 16 15" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
                         </svg>
                     </div>
+                    <div class="smiley-label">us together</div>
+                    
+                    <!-- Sad face - outlier below trendline -->
+                    <div class="sad-face">
+                        <svg viewBox="0 0 24 24">
+                            <circle class="sad-face-bg" cx="12" cy="12" r="10"/>
+                            <circle cx="8" cy="9" r="1.5" fill="white"/>
+                            <circle cx="16" cy="9" r="1.5" fill="white"/>
+                            <path d="M8 16 Q12 13 16 16" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="sad-label">you alone</div>
                     
                     <!-- Dots container -->
                     <div class="dots-container">
@@ -1063,7 +1142,7 @@
                         <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M17 6h4v4h-2l-2 2v-2h0V6z"/></svg>
                     </div>
                     <h3>We Choose a Protocol</h3>
-                    <p>Community votes what to test next: One intervention, clear biomarkers, something safe, accessible, and worth testing.</p>
+                    <p>Community votes what to test next; one intervention, clear biomarkers, something safe, accessible, and worth testing.</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">
@@ -1137,5 +1216,4 @@
         <div class="container">
             <a href="/" class="footer-logo">FAFO.health</a>
             <div class="footer-links">
-                <a href="/disclaimer.html">Disclaimer</a>
-                <a href="/cdn-cgi
+                <a href="/disclaimer.html">
