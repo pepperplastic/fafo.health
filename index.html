@@ -189,8 +189,8 @@
         /* Smiley face - at apex of trendline */
         .smiley {
             position: absolute;
-            top: 15%;
-            right: 6%;
+            top: 18%;
+            right: 3%;
             transform: translate(0, -50%);
             opacity: 0;
             animation: smileyAppear 0.8s ease-out forwards;
@@ -249,20 +249,6 @@
             66% { fill: #4A9167; }
         }
 
-        /* Label for smiley - centered below it */
-        .smiley-label {
-            position: absolute;
-            top: 28%;
-            right: 6%;
-            font-size: 10px;
-            font-weight: 500;
-            color: var(--green);
-            opacity: 0;
-            animation: labelAppear 0.5s ease-out forwards;
-            animation-delay: 8.5s;
-            white-space: nowrap;
-        }
-
         /* Question mark - bottom-left outlier area */
         .question-mark {
             position: absolute;
@@ -297,26 +283,6 @@
             0%, 100% { transform: rotate(0deg); }
             25% { transform: rotate(15deg); }
             75% { transform: rotate(-15deg); }
-        }
-
-        /* Label for question mark - centered below it */
-        .question-label {
-            position: absolute;
-            top: 80%;
-            left: 22%;
-            transform: translateX(-50%);
-            font-size: 10px;
-            font-weight: 500;
-            color: var(--text-dim);
-            opacity: 0;
-            animation: labelAppear 0.5s ease-out forwards;
-            animation-delay: 2.5s;
-            white-space: nowrap;
-        }
-
-        @keyframes labelAppear {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
         }
 
         /* Chart SVG */
@@ -1012,7 +978,6 @@
                             <path d="M8 15 Q12 18 16 15" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <div class="smiley-label">us together</div>
                     
                     <!-- Question mark - outlier below trendline -->
                     <div class="question-mark">
@@ -1021,7 +986,6 @@
                             <text x="12" y="16" text-anchor="middle" font-size="14" font-weight="bold" fill="white">?</text>
                         </svg>
                     </div>
-                    <div class="question-label">you alone</div>
                     
                     <!-- Dots container -->
                     <div class="dots-container">
