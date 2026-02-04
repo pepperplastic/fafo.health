@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnesium Form Showdown — FAFO.health</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BW6WG546K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6BW6WG546K');
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="description" content="Glycinate vs Threonate vs Citrate — which magnesium form actually wins? 150 people. 3 arms. Free supplements. Real data. Let's settle this.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+    <script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_ib6a51fchsfd');rdt('track', 'PageVisit');
+</script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #FAF9F6;
+            --bg-card: #FFFFFF;
+            --text: #1A1915;
+            --text-dim: #6B6860;
+            --accent: #C9963A;
+            --accent-dark: #A87C2E;
+            --green: #4A9167;
+            --border: #E5E2DC;
+            --purple: #7B68AE;
+            --blue: #5B8DB8;
+        }
+        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        
+        nav { padding: 20px 0; border-bottom: 1px solid var(--border); }
+        nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; }
+        .logo { font-size: 18px; font-weight: 800; color: var(--text-dim); text-decoration: none; }
+        .nav-link { font-size: 14px; color: var(--text-dim); text-decoration: none; }
+        .nav-link:hover { color: var(--accent); }
+        
+        .hero { padding: 60px 0 40px; text-align: center; }
+        .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(74, 145, 103, 0.1); color: var(--green); padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-bottom: 20px; }
+        .badge .dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        h1 { font-size: 44px; font-weight: 800; letter-spacing: -1px; margin-bottom: 16px; line-height: 1.1; }
+        .subtitle { font-size: 22px; color: var(--text-dim); max-width: 620px; margin: 0 auto 12px; }
+        .hook { font-family: 'Newsreader', serif; font-style: italic; font-size: 20px; color: var(--accent); max-width: 560px; margin: 0 auto; }
+        
+        .free-banner {
+            margin: 32px auto 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--text);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .free-banner .highlight { color: var(--accent); }
+
+        .details { padding: 40px 0; }
+        .card { background: var(--bg-card); border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .card h2 { font-size: 20px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .card h2 .icon { font-size: 24px; }
+        
+        .arms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .arm { padding: 24px 20px; border-radius: 12px; text-align: center; }
+        .arm-glycinate { background: rgba(74, 145, 103, 0.08); border: 2px solid rgba(74, 145, 103, 0.2); }
+        .arm-threonate { background: rgba(123, 104, 174, 0.08); border: 2px solid rgba(123, 104, 174, 0.2); }
+        .arm-citrate { background: rgba(91, 141, 184, 0.08); border: 2px solid rgba(91, 141, 184, 0.2); }
+        
+        .arm-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+        .arm-glycinate .arm-label { color: var(--green); }
+        .arm-threonate .arm-label { color: var(--purple); }
+        .arm-citrate .arm-label { color: var(--blue); }
+        
+        .arm h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+        .arm .dose { font-size: 14px; color: var(--text-dim); margin-bottom: 12px; }
+        .arm .claim { font-family: 'Newsreader', serif; font-style: italic; font-size: 14px; color: var(--text-dim); line-height: 1.4; }
+
+        .the-question {
+            background: var(--text);
+            color: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .the-question h2 { color: white; justify-content: center; margin-bottom: 12px; }
+        .the-question p { color: rgba(255,255,255,0.75); font-size: 16px; line-height: 1.6; max-width: 600px; margin: 0 auto; }
+        .the-question .questions-list { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+        .the-question .q-item { font-size: 15px; color: rgba(255,255,255,0.9); font-weight: 500; }
+
+        .markers-list { display: flex; flex-direction: column; gap: 12px; }
+        .marker { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); }
+        .marker:last-child { border-bottom: none; }
+        .marker-name { font-weight: 600; }
+        .marker-why { color: var(--text-dim); font-size: 14px; }
+        
+        .section-label { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; margin-top: 20px; }
+        .section-label:first-child { margin-top: 0; }
+        
+        .timeline { display: flex; gap: 16px; }
+        .timeline-item { flex: 1; text-align: center; padding: 20px 12px; background: var(--bg); border-radius: 10px; }
+        .timeline-week { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 4px; }
+        .timeline-action { font-size: 13px; }
+        
+        .eligibility { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .eligible, .not-eligible { padding: 20px; border-radius: 10px; }
+        .eligible { background: rgba(74, 145, 103, 0.1); }
+        .not-eligible { background: rgba(201, 150, 58, 0.1); }
+        .eligible h3, .not-eligible h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+        .eligible h3 { color: var(--green); }
+        .not-eligible h3 { color: var(--accent-dark); }
+        .eligible ul, .not-eligible ul { list-style: none; font-size: 14px; }
+        .eligible li, .not-eligible li { padding: 4px 0; }
+        .eligible li::before { content: "✓ "; color: var(--green); }
+        .not-eligible li::before { content: "✗ "; color: var(--accent-dark); }
+
+        .note-box {
+            background: var(--bg);
+            padding: 16px 20px;
+            border-radius: 10px;
+            border-left: 3px solid var(--accent);
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-dim);
+        }
+
+        .what-you-get {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .get-item {
+            background: var(--bg);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .get-item .get-icon { font-size: 28px; margin-bottom: 8px; }
+        .get-item h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+        .get-item p { font-size: 13px; color: var(--text-dim); }
+
+        .cost-box { background: var(--bg); padding: 24px; border-radius: 10px; text-align: center; }
+        .cost-total { font-size: 36px; font-weight: 800; color: var(--green); }
+        .cost-label { font-size: 16px; color: var(--text-dim); margin-top: 4px; }
+        .cost-detail { margin-top: 16px; font-size: 14px; color: var(--text-dim); line-height: 1.7; }
+        
+        .signup-section { padding: 40px 0 80px; }
+        .signup-card { background: var(--accent); border-radius: 16px; padding: 40px; text-align: center; }
+        .signup-card h2 { color: white; font-size: 28px; margin-bottom: 8px; }
+        .signup-card p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+        .signup-card form { max-width: 400px; margin: 0 auto; }
+        .signup-card input[type="email"] { width: 100%; padding: 14px 16px; border: none; border-radius: 8px; font-size: 16px; margin-bottom: 12px; }
+        .signup-card select { width: 100%; padding: 14px 16px; border: none; border-radius: 8px; font-size: 16px; margin-bottom: 12px; background: white; color: var(--text); }
+        .signup-card button { width: 100%; padding: 14px; background: var(--text); color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; }
+        .signup-card button:hover { background: #2a2a25; }
+        .signup-card .note { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 12px; }
+        
+        footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+        .footer-logo { font-weight: 800; color: var(--text-dim); text-decoration: none; }
+        
+        @media (max-width: 700px) {
+            h1 { font-size: 30px; }
+            .arms-grid, .what-you-get { grid-template-columns: 1fr; }
+            .eligibility { grid-template-columns: 1fr; }
+            .timeline { flex-direction: column; }
+            .marker { flex-direction: column; gap: 4px; }
+            .free-banner { font-size: 13px; padding: 10px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">FAFO<span>.health</span></a>
+            <a href="/#signup" class="nav-link">All Experiments</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="badge"><span class="dot"></span> Now Recruiting</div>
+            <h1>Glycinate vs Threonate vs Citrate</h1>
+            <p class="subtitle">The internet argues about magnesium forms every day. Let's get actual data.</p>
+            <p class="hook">"Everyone has an opinion. Nobody has a sample size. Until now."</p>
+            <div class="free-banner">We supply the magnesium. <span class="highlight">Free for all participants.</span></div>
+        </div>
+    </section>
+
+    <section class="details">
+        <div class="container">
+            
+            <div class="the-question">
+                <h2>The Questions We're Settling</h2>
+                <p>Three forms. Three claimed specialties. One head-to-head comparison.</p>
+                <div class="questions-list">
+                    <div class="q-item">Is Glycinate really the best for sleep and anxiety?</div>
+                    <div class="q-item">Does Threonate actually improve cognition more than the others?</div>
+                    <div class="q-item">Is Citrate just as good as the expensive options?</div>
+                    <div class="q-item">Which form do people actually feel the most?</div>
+                    <div class="q-item">Which one causes the least gut issues?</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>The Three Arms</h2>
+                <p style="font-size: 15px; color: var(--text-dim); margin-bottom: 20px;">You'll be randomly assigned to one group. We ship you an 8-week supply. Same brand quality across all arms — only the form differs.</p>
+                <div class="arms-grid">
+                    <div class="arm arm-glycinate">
+                        <div class="arm-label">Arm A — 50 people</div>
+                        <h3>Glycinate</h3>
+                        <div class="dose">400mg elemental Mg/day</div>
+                        <div class="claim">"The sleep and relaxation form"</div>
+                    </div>
+                    <div class="arm arm-threonate">
+                        <div class="arm-label">Arm B — 50 people</div>
+                        <h3>L-Threonate</h3>
+                        <div class="dose">144mg elemental Mg/day<br><small style="font-size:11px;">(2g Magtein — standard dose)</small></div>
+                        <div class="claim">"The brain form — crosses the blood-brain barrier"</div>
+                    </div>
+                    <div class="arm arm-citrate">
+                        <div class="arm-label">Arm C — 50 people</div>
+                        <h3>Citrate</h3>
+                        <div class="dose">400mg elemental Mg/day</div>
+                        <div class="claim">"The budget all-rounder"</div>
+                    </div>
+                </div>
+                <div class="note-box">
+                    <strong>Why random assignment?</strong> If everyone picks their favorite, the "I already believe in Glycinate" crowd skews the Glycinate results. Random assignment removes bias and lets us actually compare.
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>What We're Measuring</h2>
+                <p style="font-size: 15px; color: var(--text-dim); margin-bottom: 16px;">All measurement tools are free. We're testing functional outcomes — what you actually feel and how you actually perform.</p>
+                
+                <div class="section-label">Sleep</div>
+                <div class="markers-list">
+                    <div class="marker">
+                        <span class="marker-name">Sleep Quality (PSQI)</span>
+                        <span class="marker-why">Validated clinical questionnaire</span>
+                    </div>
+                    <div class="marker">
+                        <span class="marker-name">Time to Fall Asleep</span>
+                        <span class="marker-why">Self-reported sleep onset latency</span>
+                    </div>
+                    <div class="marker">
+                        <span class="marker-name">Wearable Sleep Data</span>
+                        <span class="marker-why">Oura / Apple Watch / Whoop — optional but encouraged</span>
+                    </div>
+                </div>
+                
+                <div class="section-label">Cognition</div>
+                <div class="markers-list">
+                    <div class="marker">
+                        <span class="marker-name">N-back Test</span>
+                        <span class="marker-why">Working memory — Threonate's claimed edge</span>
+                    </div>
+                    <div class="marker">
+                        <span class="marker-name">Reaction Time</span>
+                        <span class="marker-why">Processing speed</span>
+                    </div>
+                </div>
+
+                <div class="section-label">Mood and Wellbeing</div>
+                <div class="markers-list">
+                    <div class="marker">
+                        <span class="marker-name">Anxiety Score (GAD-7)</span>
+                        <span class="marker-why">Validated clinical anxiety scale</span>
+                    </div>
+                    <div class="marker">
+                        <span class="marker-name">Stress Level</span>
+                        <span class="marker-why">Perceived Stress Scale (PSS-4)</span>
+                    </div>
+                </div>
+
+                <div class="section-label">Body and Tolerance</div>
+                <div class="markers-list">
+                    <div class="marker">
+                        <span class="marker-name">Muscle Cramps / Tension</span>
+                        <span class="marker-why">Frequency and severity log</span>
+                    </div>
+                    <div class="marker">
+                        <span class="marker-name">GI Tolerance</span>
+                        <span class="marker-why">Which form causes the least gut issues?</span>
+                    </div>
+                    <div class="marker">
+                        <span class="marker-name">"Do You Feel It?" Score</span>
+                        <span class="marker-why">Weekly 1-10 subjective benefit rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-week">Week 0</div>
+                        <div class="timeline-action">Baseline surveys + cognitive tests</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-week">Weeks 1-8</div>
+                        <div class="timeline-action">Daily supplement + weekly check-in (~5 min)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-week">Week 4</div>
+                        <div class="timeline-action">Mid-point cognitive tests</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-week">Week 8</div>
+                        <div class="timeline-action">Final surveys + cognitive tests</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>What You Get</h2>
+                <div class="what-you-get">
+                    <div class="get-item">
+                        <div class="get-icon">💊</div>
+                        <h4>Free 8-Week Supply</h4>
+                        <p>Shipped to your door. Same quality across all arms.</p>
+                    </div>
+                    <div class="get-item">
+                        <div class="get-icon">📊</div>
+                        <h4>Your Personal Data</h4>
+                        <p>Sleep, cognition, and mood trends over 8 weeks.</p>
+                    </div>
+                    <div class="get-item">
+                        <div class="get-icon">📖</div>
+                        <h4>Full Published Results</h4>
+                        <p>See how your form compared — broken down by every metric.</p>
+                    </div>
+                    <div class="get-item">
+                        <div class="get-icon">👥</div>
+                        <h4>Community Access</h4>
+                        <p>Join the cohort discussion. Compare notes in real time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Who Should Join</h2>
+                <div class="eligibility">
+                    <div class="eligible">
+                        <h3>Good Fit</h3>
+                        <ul>
+                            <li>Adults 25-65</li>
+                            <li>Not currently taking magnesium</li>
+                            <li>Curious about which form to start with</li>
+                            <li>Willing to be randomly assigned</li>
+                            <li>Can commit to 8 weeks + weekly 5-min surveys</li>
+                            <li>US-based (for shipping)</li>
+                        </ul>
+                    </div>
+                    <div class="not-eligible">
+                        <h3>Not This Time</h3>
+                        <ul>
+                            <li>Already supplementing magnesium</li>
+                            <li>Kidney disease or eGFR below 60</li>
+                            <li>On medications that interact with Mg</li>
+                            <li>Not willing to be randomly assigned</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Cost to Participate</h2>
+                <div class="cost-box">
+                    <div class="cost-total">Free</div>
+                    <div class="cost-label">Supplements shipped. All tests online. No bloodwork required.</div>
+                    <div class="cost-detail">
+                        All we ask is your data — weekly surveys (~5 min) and three rounds of online cognitive tests (~15 min each). That's it.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-card">
+                <h2>Join the Magnesium Showdown</h2>
+                <p>150 spots. Free supplements. Real answers.</p>
+                <form action="https://formspree.io/f/mzdbzoea" method="POST" onsubmit="rdt('track', 'SignUp');">
+                    <input type="hidden" name="experiment" value="magnesium-forms">
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                    <select name="preference">
+                        <option value="" disabled selected>Which form would you pick? (just curious)</option>
+                        <option value="glycinate">Glycinate — I'm here for sleep</option>
+                        <option value="threonate">L-Threonate — I want brain gains</option>
+                        <option value="citrate">Citrate — keep it simple</option>
+                        <option value="no-preference">No preference — surprise me</option>
+                    </select>
+                    <button type="submit">Count Me In →</button>
+                    <div class="note">You'll be randomly assigned regardless of preference. We ask because we're curious what people expect going in.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="/" class="footer-logo">FAFO.health</a>
+        </div>
+    </footer>
+</body>
+</html>
