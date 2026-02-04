@@ -800,13 +800,47 @@
         .exp-badge {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            font-size: 10px;
+            gap: 8px;
+            font-size: 13px;
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: var(--green);
+            background: rgba(74, 145, 103, 0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
             margin-bottom: 12px;
+        }
+
+        .exp-badge .status-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: badgePulse 1.5s infinite;
+            box-shadow: 0 0 8px rgba(74, 145, 103, 0.6);
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px rgba(74, 145, 103, 0.6); }
+            50% { opacity: 0.6; transform: scale(1.5); box-shadow: 0 0 16px rgba(74, 145, 103, 0.9); }
+        }
+
+        .exp-badge.pending {
+            color: #B8960A;
+            background: rgba(184, 150, 10, 0.1);
+        }
+
+        .exp-card.pending {
+            opacity: 0.45;
+            pointer-events: none;
+            cursor: default;
+            filter: grayscale(30%);
+        }
+
+        .exp-card.pending:hover {
+            transform: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
 
         .exp-card h3 {
@@ -1205,8 +1239,8 @@
                         <span>Free</span>
                     </div>
                 </a>
-                <a href="/berberine.html" class="exp-card">
-                    <div class="exp-badge">Pending</div>
+                <div class="exp-card pending">
+                    <div class="exp-badge pending">Pending</div>
                     <h3>Berberine</h3>
                     <p class="exp-hook">"Nature's Ozempic"</p>
                     <p class="exp-desc">Does it actually lower blood sugar? 8 weeks, glucose + HbA1c.</p>
@@ -1214,9 +1248,9 @@
                         <span>8 weeks</span>
                         <span>~$150</span>
                     </div>
-                </a>
-                <a href="/tongkat.html" class="exp-card">
-                    <div class="exp-badge">Pending</div>
+                </div>
+                <div class="exp-card pending">
+                    <div class="exp-badge pending">Pending</div>
                     <h3>Tongkat Ali</h3>
                     <p class="exp-hook">Testosterone Booster</p>
                     <p class="exp-desc">Does the most-hyped T booster actually work? 8 weeks, full hormone panel.</p>
@@ -1224,9 +1258,9 @@
                         <span>8 weeks</span>
                         <span>~$220</span>
                     </div>
-                </a>
-                <a href="/creatine.html" class="exp-card">
-                    <div class="exp-badge">Pending</div>
+                </div>
+                <div class="exp-card pending">
+                    <div class="exp-badge pending">Pending</div>
                     <h3>Creatine for Cognition</h3>
                     <p class="exp-hook">Brain Gains</p>
                     <p class="exp-desc">Beyond the gym — does it boost working memory? 6 weeks, cognitive tests.</p>
@@ -1234,7 +1268,7 @@
                         <span>6 weeks</span>
                         <span>~$100</span>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
