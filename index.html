@@ -40,6 +40,7 @@
             --accent-dark: #A87C2E;
             --accent-light: rgba(201, 150, 58, 0.1);
             --green: #4A9167;
+            --green-dark: #3d7a56;
             --border: #E5E2DC;
         }
 
@@ -768,6 +769,79 @@
             box-shadow: 0 4px 12px rgba(201, 150, 58, 0.3);
         }
 
+        /* Experiments Grid */
+        .experiments {
+            padding: 70px 0;
+        }
+
+        .experiments-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .exp-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 28px;
+            text-decoration: none;
+            color: var(--text);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .exp-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 12px;
+        }
+
+        .exp-card h3 {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+        }
+
+        .exp-hook {
+            font-family: 'Newsreader', serif;
+            font-style: italic;
+            color: var(--accent);
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .exp-desc {
+            font-size: 14px;
+            color: var(--text-dim);
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .exp-meta {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-dim);
+        }
+
         .principles {
             padding: 70px 0;
         }
@@ -878,6 +952,11 @@
 
             .principles-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .experiments-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
             }
 
             .hero {
@@ -1105,6 +1184,57 @@
                         <button type="submit">Keep Me Posted →</button>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experiments">
+        <div class="container">
+            <div class="section-header">
+                <h2>Active Experiments</h2>
+                <span>Pick one and join the cohort</span>
+            </div>
+            <div class="experiments-grid">
+                <a href="/berberine.html" class="exp-card">
+                    <div class="exp-badge"><span class="status-dot"></span> Recruiting</div>
+                    <h3>Berberine</h3>
+                    <p class="exp-hook">"Nature's Ozempic"</p>
+                    <p class="exp-desc">Does it actually lower blood sugar? 8 weeks, glucose + HbA1c.</p>
+                    <div class="exp-meta">
+                        <span>8 weeks</span>
+                        <span>~$150</span>
+                    </div>
+                </a>
+                <a href="/tongkat.html" class="exp-card">
+                    <div class="exp-badge"><span class="status-dot"></span> Recruiting</div>
+                    <h3>Tongkat Ali</h3>
+                    <p class="exp-hook">Testosterone Booster</p>
+                    <p class="exp-desc">Does the most-hyped T booster actually work? 8 weeks, full hormone panel.</p>
+                    <div class="exp-meta">
+                        <span>8 weeks</span>
+                        <span>~$220</span>
+                    </div>
+                </a>
+                <a href="/creatine.html" class="exp-card">
+                    <div class="exp-badge"><span class="status-dot"></span> Recruiting</div>
+                    <h3>Creatine for Cognition</h3>
+                    <p class="exp-hook">Brain Gains</p>
+                    <p class="exp-desc">Beyond the gym — does it boost working memory? 6 weeks, cognitive tests.</p>
+                    <div class="exp-meta">
+                        <span>6 weeks</span>
+                        <span>~$100</span>
+                    </div>
+                </a>
+                <a href="/magnesium.html" class="exp-card">
+                    <div class="exp-badge"><span class="status-dot"></span> Recruiting</div>
+                    <h3>Magnesium Showdown</h3>
+                    <p class="exp-hook">Glycinate vs Threonate vs Citrate</p>
+                    <p class="exp-desc">Which form actually wins? 3 arms, 150 people, free supplements shipped to you.</p>
+                    <div class="exp-meta">
+                        <span>8 weeks</span>
+                        <span>Free</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
