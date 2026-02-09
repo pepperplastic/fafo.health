@@ -164,8 +164,11 @@
         .signup-card button:hover { background: #2a2a25; }
         .signup-card .note { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 12px; }
         
-        footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+        footer { padding: 40px 0; border-top: 1px solid var(--border); }
+        footer .container { display: flex; justify-content: space-between; align-items: center; }
         .footer-logo { font-weight: 800; color: var(--text-dim); text-decoration: none; }
+        .footer-email { font-size: 14px; color: var(--text-dim); text-decoration: none; }
+        .footer-email:hover { color: var(--accent); }
         
         @media (max-width: 700px) {
             h1 { font-size: 30px; }
@@ -174,6 +177,7 @@
             .timeline { flex-direction: column; }
             .marker { flex-direction: column; gap: 4px; }
             .free-banner { font-size: 13px; padding: 10px 16px; }
+            .nav-email { display: none; }
         }
     </style>
 </head>
@@ -181,7 +185,10 @@
     <nav>
         <div class="container">
             <a href="/" class="logo">FAFO<span>.health</span></a>
-            <a href="/#signup" class="nav-link">All Experiments</a>
+            <div style="display: flex; gap: 24px; align-items: center;">
+                <a href="/#experiments" class="nav-link">All Experiments</a>
+                <a href="mailto:hello&#64;fafo&#46;health" class="nav-link nav-email">hello&#64;fafo&#46;health</a>
+            </div>
         </div>
     </nav>
 
@@ -411,6 +418,7 @@
     <footer>
         <div class="container">
             <a href="/" class="footer-logo">FAFO.health</a>
+            <a href="mailto:hello&#64;fafo&#46;health" class="footer-email">hello&#64;fafo&#46;health</a>
         </div>
     </footer>
 </body>
